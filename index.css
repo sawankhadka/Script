@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    
+}
+.sidebar .logo {
+    text-align: center;
+   
+    padding-right: 30%;
+    border-bottom: 1px  solid #ddd;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+.logo label {
+    padding-left: 10px;
+   
+}
+.sidebar .nav {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar .nav li {
+    margin-bottom: 10px;
+}
+.sidebar .nav li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar .nav li a:hover {
+    background-color:#BBE9F3 ;
+}
+.sidebar .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.sidebar .logout a {
+    color: #ff0000;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.upload-box {
+    border: 2px dashed #ddd;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.upload-box:hover {
+    background-color: #f1f1f1;
+}
+.upload-box input[type="file"] {
+    display: none;
+}
